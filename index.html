@@ -21,6 +21,7 @@
         <div class="container">
           <button id="password-button">Generate Passwords</button>
           <div class="password-amendment-options-container">
+            <label for="password-length" name="Password length">Length:</label>
             <input
               type="number"
               id="password-length"
@@ -29,10 +30,18 @@
               max="15"
             />
             <div class="toggle-container">
-              <label class="number-toggle" for="number-toggle">Number</label>
+              <label
+                class="number-toggle"
+                name="Number toggle"
+                for="number-toggle"
+                >Numbers</label
+              >
               <input type="checkbox" id="number-toggle" />
 
-              <label class="symbol-toggle" name="Symbol" for="symbol-toggle"
+              <label
+                class="symbol-toggle"
+                name="Symbol toggle"
+                for="symbol-toggle"
                 >Symbol
               </label>
               <input type="checkbox" id="symbol-toggle" />
