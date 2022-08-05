@@ -96,6 +96,7 @@ let passwordLength = "";
 let userChosenPasswordLength = document.getElementById("password-length");
 let numberToggle = document.getElementById("number-toggle");
 let symbolToggle = document.getElementById("symbol-toggle");
+
 numberToggle.checked = false;
 symbolToggle.checked = false;
 
@@ -104,15 +105,6 @@ passwordButton.addEventListener("click", function generatePassword() {
   secondPassword.textContent = "";
   passwordLength = userChosenPasswordLength.value;
 
-  for (let i = 0; i < passwordLength; i++) {
-    let randomIndex1 = Math.floor(Math.random() * characters.length);
-    let randomIndex2 = Math.floor(Math.random() * characters.length);
-    firstPassword.textContent += characters[randomIndex1];
-    secondPassword.textContent += characters[randomIndex2];
-  }
-});
-
-function checked() {
   if (symbolToggle.checked === true) {
     characters = letters.concat(symbols);
   } else if (numberToggle.checked === true) {
@@ -122,5 +114,11 @@ function checked() {
   } else {
     characters = letters;
   }
-  generatePassword();
-}
+
+  for (let i = 0; i < passwordLength; i++) {
+    let randomIndex1 = Math.floor(Math.random() * characters.length);
+    let randomIndex2 = Math.floor(Math.random() * characters.length);
+    firstPassword.textContent += characters[randomIndex1];
+    secondPassword.textContent += characters[randomIndex2];
+  }
+});
