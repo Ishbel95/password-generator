@@ -1,3 +1,91 @@
+:root {
+  --primary-color: #1c1c1c;
+  --heading-color: #fff;
+  --secondary-color: #4adf86;
+  --third-font-color: #d5d4d8;
+  --primary-background: #1f2937;
+  --secondary-background: #273549;
+}
+
+@font-face {
+  font-family: karla-bold;
+  src: url(karla.bold.ttf);
+}
+
+@font-face {
+  font-family: karla;
+  src: url(karla.regular.ttf);
+}
+
 body {
-  margin: 0;
+  background-color: var(--primary-color);
+  color: var(--heading-color);
+  font-family: karla;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.25em;
+  color: var(--third-font-color);
+  font-weight: 100;
+}
+
+hr {
+  margin: 2em 0;
+  border: solid 1px var(--secondary-background);
+}
+.password-generator {
+  background-color: var(--primary-background);
+  width: 550px;
+  margin: 3em auto;
+  padding: 3em 5em;
+}
+
+.random-password {
+  color: var(--secondary-color);
+}
+
+#password-button {
+  font-size: 1em;
+  background-color: var(--secondary-color);
+  color: var(--heading-color);
+  border: none;
+  border-radius: 3px;
+  padding: 0.6em 0.7em;
+  margin: 1em 0;
+}
+
+.password-amendment-options-container {
+  margin: 0.5em 0;
+}
+#password-length {
+  display: block;
+  margin-bottom: 0.6em;
+  font-size: 1em;
+  text-align: center;
+  background-color: var(--secondary-background);
+  color: var(--heading-color);
+  border: solid 1px var(--primary-background);
+  padding: 1%;
+}
+#password-length:focus {
+  outline: none;
+}
+.toggle-container {
+  font-size: 1em;
+}
+.password-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.password-container p {
+  font-size: 1em;
+  color: var(--secondary-color);
+  background-color: var(--secondary-background);
+  padding: 0.8em 1.5em 0.3em;
+  width: 40%;
+  height: 30px;
+  text-align: center;
 }

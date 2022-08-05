@@ -105,12 +105,12 @@ passwordButton.addEventListener("click", function generatePassword() {
   secondPassword.textContent = "";
   passwordLength = userChosenPasswordLength.value;
 
-  if (symbolToggle.checked === true) {
-    characters = letters.concat(symbols);
+  if (symbolToggle.checked === true && numberToggle.checked === true) {
+    characters = letters.concat(numbers, symbols);
   } else if (numberToggle.checked === true) {
     characters = letters.concat(numbers);
-  } else if (symbolToggle.checked === true && numberToggle.checked === true) {
-    characters = letters.concat(numbers, symbols);
+  } else if (symbolToggle.checked === true) {
+    characters = letters.concat(symbols);
   } else {
     characters = letters;
   }

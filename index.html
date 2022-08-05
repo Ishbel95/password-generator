@@ -5,34 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/index.css" />
-    <title>Document</title>
+    <title>
+      Password Generator- coded by Ishbel Fahey-Theaker-Frontend Developer
+    </title>
   </head>
   <body>
-    <h1></h1>
-    <h2></h2>
-    <p></p>
-    <button id="password-button">Generate Passwords</button>
-    <input type="number" id="password-length" name="length" min="5" max="15" />
+    <div class="password-generator">
+      <header>
+        <h1>
+          Generate a <br /><span class="random-password">random password</span>
+        </h1>
+        <h2>Never use an insecure password again</h2>
+      </header>
+      <main>
+        <div class="container">
+          <button id="password-button">Generate Passwords</button>
+          <div class="password-amendment-options-container">
+            <input
+              type="number"
+              id="password-length"
+              name="length"
+              min="5"
+              max="15"
+            />
+            <div class="toggle-container">
+              <label class="number-toggle" for="number-toggle">Number</label>
+              <input type="checkbox" id="number-toggle" />
 
-    <label class="number-toggle" for="number-toggle"
-      >Number
-      <input type="checkbox" id="number-toggle" />
-      <span class="slider round"></span>
-    </label>
-
-    <label class="symbol-toggle" name="Symbol" for="symbol-toggle"
-      >Symbol
-      <input type="checkbox" id="symbol-toggle" />
-      <span class="slider round"></span>
-    </label>
-
-    <p id="first-password"></p>
-    <p id="second-password"></p>
+              <label class="symbol-toggle" name="Symbol" for="symbol-toggle"
+                >Symbol
+              </label>
+              <input type="checkbox" id="symbol-toggle" />
+            </div>
+            <hr />
+            <div class="password-container">
+              <p id="first-password"></p>
+              <p id="second-password"></p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="/index.js"></script>
   </body>
-</html>
-
-<html>
-  <head> </head>
-  <body></body>
 </html>
