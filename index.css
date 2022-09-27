@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: var(--black-background);
+  background-color: var(--third-color);
   color: var(--primary-color);
   font-family: karla;
 }
